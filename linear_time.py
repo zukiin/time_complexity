@@ -8,11 +8,10 @@ class BigO:
     # The runtime is dependent on the input size. If input is 2, then this is O(2), if input is 16 it is O(16).
     # Best case: name_to_find is at index 0 = O(1), worst case: name_to_find is at index -1 = O(n)
     def find_user_name(self, user_name):
-        for name in names:
-            if name == user_name:
-                return f"Found '{user_name} @ index {names.index(name)}"
-            else:
-                return f"'{user_name}' doesn't exist here"
+        for i in self.input:
+            if i == user_name:
+                return f"Found '{user_name} @ index {self.input.index(i)}"
+        return f"'{user_name}' doesn't exist here"
             
 
 name_to_find = input("Enter your name \n")
