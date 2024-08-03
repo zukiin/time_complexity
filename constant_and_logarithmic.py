@@ -32,7 +32,8 @@ class BigO:
         return -1
     
 name_to_find = input("Enter your name \n")
-# ------------------------------------------------#
+
+print("\n\n starting O(1)")
 big_o = BigO(name_to_find)
 big_o.print_user_name()
 
