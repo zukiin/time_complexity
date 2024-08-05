@@ -6,7 +6,7 @@ class BigO:
 
     # O(n^2): Quadratic time
     # The easiest indicator is nested loops. If a single loop is O(n), 2 = O(n^2)
-    # Basically as the input size grows, the number of iterations/ operations grows quadratically. E.g., bubble sort
+    # Basically, as the input size grows, the number of iterations/ operations grows quadratically. E.g., bubble sort & comparing elements
     # Exercise: Print all pairs of an array, don't print the duplicates.
     def print_pairs(self):
         for i in self.input:
