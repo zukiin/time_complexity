@@ -29,7 +29,24 @@ class BigO:
        
        print(f"Sorted list: {names_list}")
 
+    # Given 2 arrays, create a function that lets a user know whether the arrays contain any common elements
+    # We return a Bool
+    # The arrays can be sorted or unsorted. It doesn't matter. The time complexity is O(n^2).
+    # The best case would be to find a common element at the first index of each while comparing.
+    def check_for_common_elements(self, arr1, arr2) -> bool:
+        for i in range(len(arr1)):
+            for j in range(len(arr2)):
+                if arr1[i] == arr2[j]:
+                    return True
+        return False
+    # Need to optimize this code. Can possibly be improved to O(n), but that's just time. What about space?
+
+
 big_o = BigO(names)
 # big_o.print_pairs()
+# big_o.bubble_sort()
 
-big_o.bubble_sort()
+array1 = ['z', 'e', 'b', 'r', 'a', 'i', 'a', 'n']
+array2 = ['l', 'i', 'o', 'n']
+result = big_o.check_for_common_elements(array1, array2)
+print(f"The result is {result}")
